@@ -10,7 +10,7 @@ type UnorderedListProps = {
 
 const UnorderedList = (props: UnorderedListProps) => {
     return (
-        <ul>
+        <ul className="unorderedlist">
             {props.list.map(instance => {
                 return (
                     <li key={instance.id}><span className={props.customClassName}>{instance.first_desc}</span> {instance.description}</li>
