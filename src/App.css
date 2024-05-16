@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: hsl(24, 5%, 18%);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* overall container css */
+.container {
+  padding: 2em 4em 4em 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+}
+
+/* header starts here */
+.heading {
+  max-width: inherit;
+}
+
+.heading img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 2%;
+}
+
+.heading h1{
+  padding: 0.6em 0;
+  font-size: 6em;
+  font-weight: 800;
+}
+
+.heading p {
+  font-size: 2em;
+  max-width: 35em;
+}
+
+/* end of header */
+
+/* start of preparation section */
+.preparation {
+  border: 1px solid hsl(24, 5%, 18%);
+  padding: 2em 2em;
+}
