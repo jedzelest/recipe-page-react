@@ -4,11 +4,6 @@
   box-sizing: border-box;
   color: hsl(24, 5%, 18%);
 }
-
-.bold {
-  font-weight: 700;
-}
-
 /* overall container css */
 .container {
   padding: 2em 4em 4em 4em;
@@ -16,6 +11,7 @@
   flex-direction: column;
   gap: 2em;
   justify-content: center;
+  max-width: 150em;
 }
 
 /* header starts here */
@@ -26,10 +22,10 @@
 .heading img {
   width: 100%;
   max-width: 100%;
-  border-radius: 2%;
+  border-radius: 5%;
 }
 
-.heading h1{
+.heading h1 {
   padding: 0.6em 0;
   font-size: 6em;
   font-weight: 800;
@@ -49,16 +45,115 @@
   background-color: hsl(330, 100%, 98%);
 }
 
-.preparation h4 {
-  font-size: 1.4em;
+.preparation h3 {
+  font-size: 2.8em;
   padding: 1.2em 0 0.7em 0;
+  color: hsl(332, 51%, 32%);
 }
 
 .unorderedlist {
-  padding: 0 0 0.8 0em;
+  padding: 0 0 0.8em 4em;
 }
 
 .unorderedlist li {
   padding-left: 1em;
   padding: 0.5em 0 0.5em 1em;
+  font-size: 2em;
 }
+
+.bold {
+  font-weight: 700;
+}
+
+/* end of preparation section */
+
+/* start of ingredients section */
+
+.ingredients {
+  padding: 1em 1em 3em 1em;
+  border-bottom: 1px solid hsl(326, 4%, 61%);
+}
+
+.ingredients h3 {
+  font-size: 2.8em;
+  padding: 1.2em 0 0.7em 0;
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients .unorderedlist li {
+  font-weight: 400;
+}
+
+/* end of ingredients sections */
+
+/* start of instructions section */
+
+.instructions {
+  padding: 1em 1em;
+}
+
+.instructions h3 {
+  font-size: 2.8em;
+  padding: 1.2em 0 0.7em 0;
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions ol {
+  padding: 0.8em 1em;
+  font-size: 1.8em;
+  max-width: 60em;
+}
+
+.instructions ol li {
+  padding-left: 1em;
+  margin: 0.4em;
+  font-weight: 400;
+}
+
+.instructions ol li::marker {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+/* end of instructions section */
+
+/* start of nutrition section */
+
+.nutrition {
+  padding: 1em 1em;
+}
+
+.nutrition h3 {
+  font-size: 2.8em;
+  padding: 1.2em 0 0.7em 0;
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition p {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.nutrition .nutritionList {
+  padding: 0.8em 1.6em;
+}
+
+.nutritionList ul {
+  font-size: 2dvh;
+  list-style: none;
+  max-width: 50em;
+}
+
+.nutrition ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0.3em;
+  border-bottom: 1px solid hsl(336, 12%, 92%);
+}
+
+.nutritionList li span {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+/* end of nutrition section */
