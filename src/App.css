@@ -139,7 +139,7 @@
 }
 
 .nutritionList ul {
-  font-size: 2dvh;
+  font-size: 1.5em;
   list-style: none;
   max-width: 50em;
 }
@@ -157,3 +157,171 @@
 }
 
 /* end of nutrition section */
+
+/* media queries */
+
+@media (max-width: 900px) {
+  .heading h1 {
+    font-size: 5em;
+  }
+
+  .heading p {
+    font-size: 1.8em;
+  }
+
+  .preparation h3 {
+    font-size: 2em;
+  }
+
+  .unorderedlist li {
+    font-size: 1.5em;
+  }
+
+  .ingredients h3 {
+    font-size: 2.5em;
+  }
+
+  .ingredients .unorderedlist li {
+    font-size: 1.5em;
+  }
+
+  .instructions h3 {
+    font-size: 2.5em;
+  }
+
+  .instructions ol li {
+    font-size: 0.8em;
+  }
+
+  .nutrition h3 {
+    font-size: 2.5em;
+  }
+
+  .nutrition p {
+    font-size: 1.3em;
+  }
+
+  .nutritionList ul {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 3.2em;
+  }
+
+  .heading p {
+    font-size: 1.4em;
+  }
+
+  .preparation h3 {
+    font-size: 1.8em;
+  }
+
+  .unorderedlist li {
+    font-size: 1.2em;
+  }
+
+  .ingredients h3 {
+    font-size: 2em;
+  }
+
+  .ingredients .unorderedlist li {
+    font-size: 1.2em;
+  }
+
+  .instructions h3 {
+    font-size: 2em;
+  }
+
+  .instructions ol li {
+    font-size: 0.7em;
+  }
+
+  .nutrition h3 {
+    font-size: 2em;
+  }
+
+  .nutrition p {
+    font-size: 1.1em;
+  }
+
+  .nutritionList ul {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .preparation {
+    border-radius: 2%;
+    padding: 0 0 2em 2.2em;
+    background-color: hsl(330, 100%, 98%);
+  }
+
+  .unorderedlist li {
+    padding: 0.5em 0 0.5em 0.5em;
+    font-size: 1.2em;
+  }
+
+  .unorderedlist {
+    padding: 0 0 0.8em 2em;
+  }
+}
+
+@media (max-width: 375px) {
+  .heading h1 {
+    font-size: 2.8em;
+  }
+
+  .heading p {
+    font-size: 1.4em;
+  }
+
+  .preparation h3 {
+    font-size: 1.8em;
+  }
+
+  .preparation {
+    border-radius: 2%;
+    padding: 0 0 2em 2.2em;
+    background-color: hsl(330, 100%, 98%);
+  }
+
+  .unorderedlist li {
+    padding: 0.5em 0 0.5em 0.5em;
+    font-size: 1.2em;
+  }
+
+  .unorderedlist {
+    padding: 0 0 0.8em 2em;
+  }
+
+  .ingredients h3 {
+    font-size: 2em;
+  }
+
+  .ingredients .unorderedlist li {
+    font-size: 1.2em;
+  }
+
+  .instructions h3 {
+    font-size: 2em;
+  }
+
+  .instructions ol li {
+    font-size: 0.6em;
+  }
+
+  .nutrition h3 {
+    font-size: 2em;
+  }
+
+  .nutrition p {
+    font-size: 0.8em;
+  }
+
+  .nutritionList ul {
+    font-size: 1.1em;
+  }
+}
