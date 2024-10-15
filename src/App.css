@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: hsl(24, 5%, 18%);
+}
+/* overall container css */
+.container {
+  padding: 2em 4em 4em 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  max-width: 150em;
+}
+
+/* header starts here */
+.heading {
+  max-width: inherit;
+}
+
+.heading img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+.heading h1 {
+  padding: 0.6em 0;
+  font-size: 6em;
+  font-weight: 800;
+}
+
+.heading p {
+  font-size: 2em;
+  max-width: 35em;
+}
+
+/* end of header */
+
+/* start of preparation section */
+.preparation {
+  border-radius: 2%;
+  padding: 0 0 2em 3.2em;
+  background-color: hsl(330, 100%, 98%);
+}
+
+.preparation h3 {
+  font-size: 2.8em;
+  padding: 1.2em 0 0.7em 0;
+  color: hsl(332, 51%, 32%);
+}
+
+.unorderedlist {
+  padding: 0 0 0.8em 4em;
+}
+
+.unorderedlist li {
+  padding-left: 1em;
+  padding: 0.5em 0 0.5em 1em;
+  font-size: 2em;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* end of preparation section */
+
+/* start of ingredients section */
+
+.ingredients {
+  padding: 1em 1em 3em 1em;
+  border-bottom: 1px solid hsl(326, 4%, 61%);
+}
+
+.ingredients h3 {
+  font-size: 2.8em;
+  padding: 1.2em 0 0.7em 0;
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients .unorderedlist li {
+  font-weight: 400;
+}
+
+/* end of ingredients sections */
+
+/* start of instructions section */
+
+.instructions {
+  padding: 1em 1em;
+}
+
+.instructions h3 {
+  font-size: 2.8em;
+  padding: 1.2em 0 0.7em 0;
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions ol {
+  padding: 0.8em 1em;
+  font-size: 1.8em;
+  max-width: 60em;
+}
+
+.instructions ol li {
+  padding-left: 1em;
+  margin: 0.4em;
+  font-weight: 400;
+}
+
+.instructions ol li::marker {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+/* end of instructions section */
+
+/* start of nutrition section */
+
+.nutrition {
+  padding: 1em 1em;
+}
+
+.nutrition h3 {
+  font-size: 2.8em;
+  padding: 1.2em 0 0.7em 0;
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition p {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.nutrition .nutritionList {
+  padding: 0.8em 1.6em;
+}
+
+.nutritionList ul {
+  font-size: 1.5em;
+  list-style: none;
+  max-width: 50em;
+}
+
+.nutrition ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0.3em;
+  border-bottom: 1px solid hsl(336, 12%, 92%);
+}
+
+.nutritionList li span {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+/* end of nutrition section */
+
+/* media queries */
+
+@media (max-width: 900px) {
+  .heading h1 {
+    font-size: 5em;
+  }
+
+  .heading p {
+    font-size: 1.8em;
+  }
+
+  .preparation h3 {
+    font-size: 2em;
+  }
+
+  .unorderedlist li {
+    font-size: 1.5em;
+  }
+
+  .ingredients h3 {
+    font-size: 2.5em;
+  }
+
+  .ingredients .unorderedlist li {
+    font-size: 1.5em;
+  }
+
+  .instructions h3 {
+    font-size: 2.5em;
+  }
+
+  .instructions ol li {
+    font-size: 0.8em;
+  }
+
+  .nutrition h3 {
+    font-size: 2.5em;
+  }
+
+  .nutrition p {
+    font-size: 1.3em;
+  }
+
+  .nutritionList ul {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 3.2em;
+  }
+
+  .heading p {
+    font-size: 1.4em;
+  }
+
+  .preparation h3 {
+    font-size: 1.8em;
+  }
+
+  .unorderedlist li {
+    font-size: 1.2em;
+  }
+
+  .ingredients h3 {
+    font-size: 2em;
+  }
+
+  .ingredients .unorderedlist li {
+    font-size: 1.2em;
+  }
+
+  .instructions h3 {
+    font-size: 2em;
+  }
+
+  .instructions ol li {
+    font-size: 0.7em;
+  }
+
+  .nutrition h3 {
+    font-size: 2em;
+  }
+
+  .nutrition p {
+    font-size: 1.1em;
+  }
+
+  .nutritionList ul {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .preparation {
+    border-radius: 2%;
+    padding: 0 0 2em 2.2em;
+    background-color: hsl(330, 100%, 98%);
+  }
+
+  .unorderedlist li {
+    padding: 0.5em 0 0.5em 0.5em;
+    font-size: 1.2em;
+  }
+
+  .unorderedlist {
+    padding: 0 0 0.8em 2em;
+  }
+}
+
+@media (max-width: 375px) {
+  .heading h1 {
+    font-size: 2.8em;
+  }
+
+  .heading p {
+    font-size: 1.4em;
+  }
+
+  .preparation h3 {
+    font-size: 1.8em;
+  }
+
+  .preparation {
+    border-radius: 2%;
+    padding: 0 0 2em 2.2em;
+    background-color: hsl(330, 100%, 98%);
+  }
+
+  .unorderedlist li {
+    padding: 0.5em 0 0.5em 0.5em;
+    font-size: 1.2em;
+  }
+
+  .unorderedlist {
+    padding: 0 0 0.8em 2em;
+  }
+
+  .ingredients h3 {
+    font-size: 2em;
+  }
+
+  .ingredients .unorderedlist li {
+    font-size: 1.2em;
+  }
+
+  .instructions h3 {
+    font-size: 2em;
+  }
+
+  .instructions ol li {
+    font-size: 0.6em;
+  }
+
+  .nutrition h3 {
+    font-size: 2em;
+  }
+
+  .nutrition p {
+    font-size: 0.8em;
+  }
+
+  .nutritionList ul {
+    font-size: 1.1em;
+  }
+}
